@@ -1,6 +1,3 @@
-Below is the README.md file with strategically placed emojis to enhance readability and visual appeal while maintaining professionalism. I've added emojis to section headers, key points, and code blocks to make the document more engaging without overdoing it. The structure and content remain unchanged.
-
-```markdown
 # ReAct Agent for Gemini 🚀
 
 ## Project Description 📝
