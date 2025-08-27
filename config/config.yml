@@ -1,0 +1,4 @@
+project_id: react-agent-465408
+credentials_json: ./credentials/key.json
+region: us-central1
+model_name: gemini-2.5-flash

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.venv/
+
+# Logs
+logs/
+*.log
+
+# Data
+data/output/
+
+# Credentials
+credentials/key.json
+credentials/key.yml
+
+# Poetry
+poetry.lock
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
