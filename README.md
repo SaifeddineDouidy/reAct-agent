@@ -17,25 +17,6 @@ This project implements a ReAct (Reasoning and Acting) agent designed to interac
 ## Architecture
 The ReAct agent operates on a loop of "Thought," "Action," and "Observation."
 
-```mermaid
-graph TD
-    A[User Query] --> B{Agent.execute()};
-    B --> C{Agent.think()};
-    C --> D[Construct Prompt with Query, History, Tools];
-    D --> E[Gemini LLM];
-    E --> F[LLM Response (Thought/Action/Answer)];
-    F --> G{Agent.parse_response()};
-    G --> H{Agent.decide()};
-    H -- If Action Suggested --> I{Agent.act()};
-    I --> J[Execute Tool (e.g., Google Search, Wikipedia)];
-    J --> K[Tool Observation];
-    K --> L[Add Observation to Memory];
-    L --> C;
-    H -- If Final Answer --> M[Agent.final_answer];
-    M --> N[Return Response to User];
-    H -- If Continue Thinking --> C;
-```
-
 ### Components:
 *   **Agent**: The core orchestrator, managing the ReAct loop, state, memory, and tool interactions.
 *   **Gemini LLM**: The brain of the agent, responsible for generating thoughts, deciding on actions, and formulating answers.
@@ -96,8 +77,8 @@ react-agent/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-repo/react-agent.git
-cd react-agent
+git clone [https://github.com/your-repo/react-agent.git](https://github.com/SaifeddineDouidy/reAct-agent)
+cd reAct-agent
 ```
 
 ### 2. Install dependencies using Poetry
